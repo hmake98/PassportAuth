@@ -1,0 +1,35 @@
+<ul class="nav nav-tabs">
+    <li class="nav-item">
+        <a class="nav-link active" href="#"> Login </a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="/auth/google"> Google </a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="/auth/facebook"> Facebook </a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="/local"> Passport login </a>
+    </li>
+</ul>
+<div class="alert alert-warning alert-dismissible fade show" role="alert">
+    <strong> Error: </strong>{{message}}
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+    </button>
+</div>
+<div class="container">
+    <form action="/login" class="myForm" method="post">
+        <h1> Signin </h1>
+        <hr> 
+        <div class="form-group">
+            <input class="form-control input-lg" type="email" name="email" id="email" placeholder="Enter email" />
+        </div>
+        <div class="form-group">
+            <input class="form-control input-lg" type="password" name="password" placeholder="Enter password" />
+        </div>
+        <div class="form-group">
+            <input type="submit" name="submit" class="w-100 btn btn-primary btn-lg" value="Signin" />
+        </div>
+    </form>
+</div>
